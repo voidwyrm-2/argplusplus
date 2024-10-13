@@ -11,13 +11,13 @@ Here's an example of usage
 using namespace argpp;
 
 int main(int argc, char** argv) {
-    vector<Flag>* flags = new vector<Flag>();
+    vector<Flag> flags = vector<Flag>();
     Flag help("h", "help", "Shows the help message");
-    flags->push_back(help);
+    flags.push_back(help);
     Flag msg("m", "msg", "Shows a message");
-    flags->push_back(msg);
+    flags.push_back(msg);
 
-    Parser parser(argc, argv, *flags, "example");
+    Parser parser(argc, argv, flags, "example");
 
     auto parsed = parser.parse();
 
