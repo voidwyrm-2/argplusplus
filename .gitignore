@@ -1,0 +1,19 @@
+# this very odd looking gitingnore is so I can automatically ignore all the 
+*
+
+!*.*
+!*/
+
+!examples/*.*
+!LICENSE
+
+test/
+
+commit.sh
+build/
+test/build/
+compile/
+dist/
+.DS_Store
+.vscode
+__pycache__
